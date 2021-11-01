@@ -18,11 +18,13 @@ public class scr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Horizontal Movement 
+        //Left
         move = Input.GetAxis("Horizontal");
         if (move > 0 && !facingRight)
             Flip();
 
-
+        //Right
         if (move < 0 && facingRight)
             Flip();
         
@@ -30,6 +32,7 @@ public class scr : MonoBehaviour
 
     void FixedUpdate()
     {
+        //apply velocity to actor
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
     }
 
@@ -44,3 +47,5 @@ public class scr : MonoBehaviour
         transform.localScale = theScale;
     }
 }
+
+//blair was here
