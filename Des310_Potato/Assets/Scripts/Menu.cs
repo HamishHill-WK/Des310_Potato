@@ -8,7 +8,6 @@ public class Menu : MonoBehaviour
     private GameObject gamePanel;
 
     enum States { menu = 0, profile, options, closed };
-
     States current = States.menu;
 
     // Start is called before the first frame update
@@ -42,7 +41,12 @@ public class Menu : MonoBehaviour
         switchState(States.options);
     }
 
-    void switchState(States state)
+    public void closeApp()
+    {
+        Application.Quit();
+    }
+
+    private void switchState(States state)
     {
         current = state;
         switch (current)
