@@ -1,5 +1,9 @@
 ﻿using UnityEngine;
 
+//this script was written by Hamish Hill Github: @HamishHill-WK
+//this script controls which panel the user is viewing - hh
+//each public function has a corresponding button in the scene 
+
 public class Menu : MonoBehaviour
 {
     private GameObject menuPanel;
