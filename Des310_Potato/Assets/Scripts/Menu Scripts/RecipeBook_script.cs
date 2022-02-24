@@ -12,7 +12,14 @@ public class RecipeBook_script : MonoBehaviour
     public Canvas recipeBook;
     public GameObject recipePanel;
     public Button backButton;
+    public Transform prefab;        //Test prefab
+
+
+
+    private GameObject recipeBookObject;
     private Button recipe1Button;
+
+    private Button proceedButton;
     
 
     //Recipe text references
@@ -47,6 +54,12 @@ public class RecipeBook_script : MonoBehaviour
         //Recipe 1 button
         Button rep1Btn = recipe1Button.GetComponent<Button>();
         rep1Btn.onClick.AddListener(showFirstRecipe);
+
+        proceedButton = GameObject.Find("Proceed Button").GetComponent<Button>();
+        proceedButton.onClick.AddListener(miniGame1Test);
+
+
+        recipeBook.enabled = false;
     }
 
     // Update is called once per frame
@@ -62,16 +75,6 @@ public class RecipeBook_script : MonoBehaviour
         }
     }
     
-    void OnMouseDown()
-    {
-        Debug.Log("Hello world this click was detected");
-        // this object was clicked - do something
-
-        if (recipeBook.enabled == false)
-        {
-             recipeBook.enabled = true;
-        }
-    }
 
     void exitRecipeBook()
     {
@@ -83,6 +86,7 @@ public class RecipeBook_script : MonoBehaviour
             recipeBook.enabled = false;
         }
     }
+
 
     //Text Set Up
 
@@ -118,9 +122,9 @@ public class RecipeBook_script : MonoBehaviour
         recipeIng = GameObject.Find("Recipe Ingredients").GetComponent<Text>();
         recipeMethod = GameObject.Find("Recipe Method").GetComponent<Text>();
         recipeMiniGames = GameObject.Find("Minigames Involved").GetComponent<Text>();
-    }
 
-#pragma
+        
+    }
 
     void showFirstRecipe()
     {
@@ -135,6 +139,20 @@ public class RecipeBook_script : MonoBehaviour
         recipeMethod.text = "Recipe Method";
 
         recipeMiniGames.text = "Recipe Minigames";
+
+
+    }
+
+    void miniGame1Test()
+    {
+        if (recipeBook.enabled == true)
+        {
+            recipeBook.enabled = false;
+        }
+
+        Debug.Log("This button works ");
+
+        Instantiate(prefab, new Vector3(2.0f, 1, 1), Quaternion.identity);
     }
 
     //End of code written by Blair McCartan

@@ -9,6 +9,10 @@ public class swipeDetection_script : MonoBehaviour
     Vector2 secondPressPos;
     Vector2 currentSwipe;
 
+    public Material material1;
+    public Material material2;
+    public GameObject testObject;
+
     private void Update()
     {
         touchSwipeMethod();
@@ -58,11 +62,13 @@ public class swipeDetection_script : MonoBehaviour
                 if (currentSwipe.x < 0 & (currentSwipe.y > -0.5f || currentSwipe.y < 0.5f))
                 {
                     Debug.Log("left swipe");
+                    testObject.GetComponent<MeshRenderer>().material = material2;
                 }
                 //swipe right
                 if (currentSwipe.x > 0 & (currentSwipe.y > -0.5f || currentSwipe.y < 0.5f))
                 {
                     Debug.Log("right swipe");
+                    testObject.GetComponent<MeshRenderer>().material = material1;
                 }
             }
         }
