@@ -15,9 +15,9 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
-    y: 43
-    width: 1920
-    height: 997
+    y: 42.666668
+    width: 1280
+    height: 646.6667
   m_ShowMode: 4
   m_Title: Inspector
   m_RootView: {fileID: 6}
@@ -43,12 +43,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     width: 1920
     height: 947
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 80
+=======
+    width: 1280
+    height: 597
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 83
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,12 +73,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1500
+    x: 1000
     y: 0
-    width: 420
-    height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 280
+    height: 597
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -92,8 +101,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     width: 404
     height: 676
+=======
+    width: 269
+    height: 326
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -117,8 +131,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     y: 676
     width: 1500
+=======
+    y: 326
+    width: 1000
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     height: 271
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -148,8 +167,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 997
+    width: 1280
+    height: 647
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -173,7 +192,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 1280
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -197,8 +216,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 977
-    width: 1920
+    y: 627
+    width: 1280
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -221,12 +240,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     width: 1500
     height: 947
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 85
+=======
+    width: 1000
+    height: 597
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 84
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,12 +274,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     width: 1500
     height: 676
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
   controlID: 86
+=======
+    width: 1000
+    height: 326
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 85
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -267,10 +304,17 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     x: 404
     y: 0
     width: 1096
     height: 676
+=======
+    x: 269
+    y: 0
+    width: 731
+    height: 326
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -296,7 +340,7 @@ MonoBehaviour:
   m_MaxSize: {x: 2048, y: 2048}
   m_TitleContent:
     m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -321,13 +365,18 @@ MonoBehaviour:
   m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
     m_Text: Project
-    m_Image: {fileID: -5467254957812901981, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     y: 749
     width: 1499
+=======
+    y: 398.6667
+    width: 999
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     height: 250
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
@@ -343,21 +392,31 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
   m_LastProjectPath: C:\Users\Hamish\Desktop\groupProject\Des310_Potato
+=======
+  m_LastProjectPath: C:\Abertay\DES310 Group project\project\Des310_Potato\Des310_Potato
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     m_SelectedIDs: c8370000
     m_LastClickedID: 14280
     m_ExpandedIDs: 00000000c837000000ca9a3b
+=======
+    m_SelectedIDs: 22380000
+    m_LastClickedID: 14370
+    m_ExpandedIDs: 000000001638000000ca9a3b
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -385,7 +444,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     m_ExpandedIDs: 00000000c8370000
+=======
+    m_ExpandedIDs: 0000000016380000
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -412,7 +475,11 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -457,14 +524,14 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
-    m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1500
-    y: 73
-    width: 419
-    height: 926
+    x: 1000
+    y: 72.66667
+    width: 279
+    height: 576
   m_ViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -495,21 +562,33 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Hierarchy
-    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -590624980919486359, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     y: 73
     width: 403
     height: 655
+=======
+    y: 72.66667
+    width: 268
+    height: 305
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
       m_SelectedIDs: 46370000
       m_LastClickedID: 14150
       m_ExpandedIDs: a0deffff4ae2ffff9ee4ffffa0e7ffff32f9ffff60fbffff063700001a3700004637000090370000
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 5afaffff6efaffff80faffff90faffff9cfaffff28fbffffa63b0000
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -549,7 +628,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2593428753322112591, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -665,14 +744,21 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     x: 404
     y: 73
     width: 1094
     height: 655
+=======
+    x: 269.33334
+    y: 72.66667
+    width: 729
+    height: 305
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -680,7 +766,11 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
   m_TargetSize: {x: 357, y: 634}
+=======
+  m_TargetSize: {x: 1024, y: 768}
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -689,16 +779,27 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
   m_SelectedSizes: 07000000000000000000000000000000000000000000000000000000000000000000000000000000
+=======
+  m_SelectedSizes: 06000000000000000000000000000000000000000000000000000000000000000000000000000000
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
     m_HBaseRangeMin: -178.5
     m_HBaseRangeMax: 178.5
     m_VBaseRangeMin: -317
     m_VBaseRangeMax: 317
+=======
+    m_HBaseRangeMin: -341.33334
+    m_HBaseRangeMax: 341.33334
+    m_VBaseRangeMin: -256
+    m_VBaseRangeMax: 256
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -716,16 +817,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
       width: 1094
       height: 634
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 547, y: 317}
+=======
+      width: 729
+      height: 284
+    m_Scale: {x: 0.5546875, y: 0.5546875}
+    m_Translation: {x: 364.5, y: 142}
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD:Des310_Potato/Library/CurrentLayout-default.dwlt
       x: -547
       y: -317
       width: 1094
@@ -733,6 +842,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1094, y: 655}
+=======
+      x: -657.1268
+      y: -256
+      width: 1314.2535
+      height: 512
+    m_MinimalGUI: 1
+  m_defaultScale: 0.5546875
+  m_LastWindowPixelSize: {x: 1093.5, y: 457.5}
+>>>>>>> Buffer:unity test 3/Library/CurrentLayout-default.dwlt
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -754,7 +872,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Console
-    m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
