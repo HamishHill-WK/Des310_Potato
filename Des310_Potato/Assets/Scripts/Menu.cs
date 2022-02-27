@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //this script was written by Hamish Hill Github: @HamishHill-WK
 //this script controls which panel the user is viewing - hh
@@ -43,6 +44,11 @@ public class Menu : MonoBehaviour
     public void openOptions()
     {
         switchState(States.options);
+    }
+
+    public void openFarm ()
+    {
+        SceneManager.LoadScene("Farming");
     }
 
     public void closeApp()
