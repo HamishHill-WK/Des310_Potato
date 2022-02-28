@@ -633,11 +633,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 671134209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2effa3c5f3db546ab60fe262f66c17, type: 3}
+  m_Script: {fileID: 11500000, guid: cb6f6da0e88773d43acae7c94d5fbd72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selected: 0
   stock: 0
+  txt: {fileID: 21898541}
 --- !u!136 &671134212
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -819,12 +820,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 936398848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9040d7f7043a68c468376dac24365b04, type: 3}
+  m_Script: {fileID: 11500000, guid: d4f209b0bcf202247a6449482b104ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mat1: {fileID: 2100000, guid: 76addb2f98db8634c986531549160bb5, type: 2}
   mat2: {fileID: 2100000, guid: b48f2c4cd30312a41b63f29f925c07d1, type: 2}
-  harvest: 0
 --- !u!4 &936398850
 Transform:
   m_ObjectHideFlags: 0

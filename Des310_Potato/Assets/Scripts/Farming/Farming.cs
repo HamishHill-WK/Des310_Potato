@@ -25,12 +25,17 @@ public class Farming : MonoBehaviour
     public Material mat1;
     public Material mat2;
 
-    public int harvest;
+    private int harvest;
 
     private Camera camera1;
     private Ray ray;
     private RaycastHit hit;
 
+    IEnumerator wait()
+    {
+        yield return new WaitForSecondsRealtime(1);
+        invPanel.SetActive(false);
+    }
 
     private void userInput()
     {
@@ -43,7 +48,6 @@ public class Farming : MonoBehaviour
 
                 if (hit.collider.gameObject == inventory)
                 {
-
                     if (currentSelect == selectable.inventory)
                     {
                         invPanel.SetActive(false);
@@ -52,7 +56,6 @@ public class Farming : MonoBehaviour
 
                         return; //without this inventory cannot be closed
                     }
-
 
                     if (currentSelect != selectable.inventory)
                     {
@@ -65,6 +68,8 @@ public class Farming : MonoBehaviour
                 if (hit.collider.gameObject == potato)
                 {
                     Selector(selectable.potato);
+
+                    StartCoroutine(wait());
                 }
                 
                 if (hit.collider.gameObject == spade)
@@ -141,6 +146,7 @@ public class Farming : MonoBehaviour
     private void Harvest(float yield)
     {
         harvest += (int)Mathf.CeilToInt(yield/10.0f);
+        potato.GetComponent<potato>().addStock(harvest);
     }
 
     private void updateVars()
