@@ -9,16 +9,18 @@ public class Farming : MonoBehaviour
     private GameObject potato;
     private GameObject spade;
     private GameObject soil;
+    private GameObject inventory;
+    private GameObject invPanel;
 
     private bool plantable;
     private bool planted;
 
-    enum selectable { none = 0, potato, spade };
+    enum selectable { none = 0, potato, spade, inventory };
     selectable currentSelect = selectable.none;
 
     private MeshRenderer potatoMesh;
     private MeshRenderer spadeMesh;
-    private MeshRenderer soilMesh;
+    private MeshRenderer invMesh;
 
     public Material mat1;
     public Material mat2;
@@ -29,20 +31,6 @@ public class Farming : MonoBehaviour
     private Ray ray;
     private RaycastHit hit;
 
-    private void startLoad()
-    {
-        potato = GameObject.Find("Potato");
-        spade = GameObject.Find("Spade");
-        soil = GameObject.Find("Soil");
-        camera1 = Camera.main;
-
-        potatoMesh = potato.GetComponent<MeshRenderer>();
-        spadeMesh = spade.GetComponent<MeshRenderer>();
-        soilMesh = soil.GetComponent<MeshRenderer>();
-
-        plantable = soil.GetComponent<soil>().plantable;
-        planted = soil.GetComponent<soil>().planted;
-    }
 
     private void userInput()
     {
@@ -52,18 +40,36 @@ public class Farming : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
+
+                if (hit.collider.gameObject == inventory)
+                {
+
+                    if (currentSelect == selectable.inventory)
+                    {
+                        invPanel.SetActive(false);
+
+                        Selector(selectable.none);
+
+                        return; //without this inventory cannot be closed
+                    }
+
+
+                    if (currentSelect != selectable.inventory)
+                    {
+                        invPanel.SetActive(true);
+
+                        Selector(selectable.inventory);
+                    }
+                }
+
                 if (hit.collider.gameObject == potato)
                 {
                     Selector(selectable.potato);
-                    //Debug.Log("potato");
-                   // pSelect = true;
                 }
                 
                 if (hit.collider.gameObject == spade)
                 {
                     Selector(selectable.spade);
-                   // Debug.Log("spade");
-                  //  pSelect = true;
                 }   
 
                 if (hit.collider.gameObject == soil && currentSelect == selectable.spade )
@@ -72,10 +78,7 @@ public class Farming : MonoBehaviour
                     {
                         Selector(selectable.none);
 
-                       // plantable = true;
                         soil.GetComponent<soil>().plantable = true;
-                        //Debug.Log("spade");
-                        //  pSelect = true;
                     }
 
                     if(planted)
@@ -84,9 +87,7 @@ public class Farming : MonoBehaviour
 
                         Harvest(soil.GetComponent<soil>().yield);
 
-                        //soil.GetComponent<soil>().plantable = true;
                         soil.GetComponent<soil>().planted = false;
-                        //harvest += soil.GetComponent<soil>().yield;
 
                         soil.GetComponent<soil>().yield = 0.0f;
                     }
@@ -100,8 +101,6 @@ public class Farming : MonoBehaviour
 
                         soil.GetComponent<soil>().plantable = false;
                         soil.GetComponent<soil>().planted = true;
-                        //plantable = false;
-                        //planted = true;
                     }
                 }
             }
@@ -114,28 +113,34 @@ public class Farming : MonoBehaviour
         switch (currentSelect)
         {
             case selectable.none:
-                // code block
                 potatoMesh.material = mat2;
                 spadeMesh.material = mat2;
+                invMesh.material = mat2;
                 break;
 
             case selectable.potato:
-                // code block
                 potatoMesh.material = mat1;
                 spadeMesh.material = mat2;
+                invMesh.material = mat2;
                 break;
 
             case selectable.spade:
-                // code block
                 potatoMesh.material = mat2;
                 spadeMesh.material = mat1;
+                invMesh.material = mat2;
+                break;
+
+            case selectable.inventory:
+                potatoMesh.material = mat2;
+                spadeMesh.material = mat2;
+                invMesh.material = mat1;
                 break;
         }
     }
 
     private void Harvest(float yield)
     {
-        harvest = (int)Mathf.CeilToInt(yield/10.0f);
+        harvest += (int)Mathf.CeilToInt(yield/10.0f);
     }
 
     private void updateVars()
@@ -144,10 +149,30 @@ public class Farming : MonoBehaviour
         planted = soil.GetComponent<soil>().planted;
     }
 
+    private void startLoad()
+    {
+        potato = GameObject.Find("Potato");
+        spade = GameObject.Find("Spade");
+        soil = GameObject.Find("Soil");
+        inventory = GameObject.Find("Inventory");
+        invPanel = GameObject.Find("invPanel");
+
+        invPanel.SetActive(false);
+
+        camera1 = Camera.main;
+
+        potatoMesh = potato.GetComponent<MeshRenderer>();
+        spadeMesh = spade.GetComponent<MeshRenderer>();
+        invMesh = inventory.GetComponent<MeshRenderer>();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
         startLoad();
+
+        updateVars();
     }
 
     // Update is called once per frame
